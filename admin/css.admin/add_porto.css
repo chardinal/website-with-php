@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74b9ff, #6c5ce7);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    background: rgba(0, 0, 42, 0.9);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #bbb;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    outline: none;
+    border-color: #00cec9;
+    box-shadow: 0 0 8px rgba(0, 206, 201, 0.5);
+}
+
+input[type="submit"],
+button {
+    width: 48%;
+    padding: 12px;
+    background-color: #00cec9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 5px 1%;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #019d92;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active,
+button:active {
+    transform: translateY(0);
+}
+
+button {
+    background-color: #d63031;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Preview Gambar */
+#preview {
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+#preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tambahan agar responsif */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="submit"],
+    button {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

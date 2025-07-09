@@ -1,0 +1,160 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1c1c1c;
+    background-image: url("../img/background.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Warna overlay untuk gelap */
+    backdrop-filter: blur(10px); /* Tingkat blur */
+    z-index: -1; /* Di belakang konten lainnya */
+}
+/* Animasi */
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Container untuk konten utama */
+.container {
+    margin-left: 0px; /* Sesuaikan dengan lebar sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Hover effect untuk container saat sidebar diperbesar */
+.sidebar:hover ~ .container {
+    margin-left: 300px;
+}
+
+/* Container styling */
+.container {
+    background: #001021;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+}
+/* Container for the login form */
+.login-container {
+    width: 400px;
+    padding: 20px;
+    background: #000220;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Logo styling */
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 130px;
+    height: 30%;
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color :#fff;
+}
+
+#form-toggle {
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
+#form-toggle span {
+    text-decoration: underline;
+}
+
+/* Input fields */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color :#daa700;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #50c6ff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #002349;
+}

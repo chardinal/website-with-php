@@ -1,0 +1,110 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #001021;
+            color: #1c1c1c;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            text-align: center;
+            color: #daa700;
+            border-bottom: 2px solid #daa700;
+            padding-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .sidebar ul li a:hover {
+            background-color: #daa700;
+            color: #001021;
+        }
+        .main-content {
+            margin-left: 290px;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .navbar input {
+            width: 300px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .navbar .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #001021;
+        }
+        .earnings-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .earnings-section .chart,
+        .earnings-section .card {
+            flex: 1 1 45%;
+            min-width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .earnings-section .chart canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .main-content {
+                margin-left: 220px;
+            }
+            .navbar input {
+                width: 200px;
+            }
+        }

@@ -1,0 +1,124 @@
+/* Gaya umum untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #131313;
+    color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Kontainer form */
+form {
+    background: #000220;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Judul form */
+form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Section form untuk memisahkan bagian */
+form .form-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+/* Gaya label */
+form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #daa700;
+}
+
+/* Gaya input dan textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 90%;
+    padding: 11px 3px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #131313;
+    color: #f3f3f3;
+    transition: border-color 0.3s;
+}
+
+/* Fokus input */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #1a1a1a;
+}
+
+/* Gaya untuk select */
+form select {
+    cursor: pointer;
+}
+
+/* Tombol submit */
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover tombol */
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Catatan atau instruksi tambahan */
+form .note {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: justify;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
